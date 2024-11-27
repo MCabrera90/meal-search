@@ -18,7 +18,6 @@ watch(route, () => {
         <h1 class="text-4xl font-bold mb-4">Search Meals By Letter</h1>
     </div>
     
-
     <div class="flex justify-center gap-2 mt-2">
         <router-link :to="{name: 'MealsByLetter', params: {letter}}" v-for="letter in letters" :key="letter">
             {{ letter }}
